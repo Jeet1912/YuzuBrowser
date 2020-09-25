@@ -1,4 +1,4 @@
-/*
+ /*
  * Copyright (C) 2017-2019 Hazuki
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -125,6 +125,9 @@ dependencies {
     implementation ('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') {
         transitive = true
     }
+
+    implementation project(':flutter')
+
     implementation project(':browser')
     implementation project(':ui')
     implementation project(':legacy')

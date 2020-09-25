@@ -20,3 +20,10 @@ file('module').eachDir { dir ->
     include dir.name
     project(":${dir.name}").projectDir = dir
 }
+
+// adding flutter module as a sub-project
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+    settingsDir.parentFile,
+    'my_flutter/.android/include_flutter.groovy'
+))
