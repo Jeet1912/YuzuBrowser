@@ -149,4 +149,10 @@ dependencies {
     implementation Libs.dagger_android
     implementation Libs.dagger_android_support
     kapt Libs.dagger_android_processor
+
+    implementation 'com.google.firebase:firebase-analytics:17.5.0'
+    implementation 'com.google.firebase:firebase-dynamic-links-ktx:19.1.0'
+    implementation 'com.google.firebase:firebase-analytics-ktx:17.5.0'
+
+
 }
